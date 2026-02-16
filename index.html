@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Greta Allwyn - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
@@ -14,6 +14,8 @@
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#demos">Demos</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -23,7 +25,7 @@
   <!-- Hero Section -->
   <header class="hero">
     <div class="container">
-      <img src="Greta_pic.jpg" alt="Greta Allwyn" class="hero-image">
+      <img src="Greta_pic.jpg" alt="Greta Allwyn" class="hero-image" />
       <div class="hero-text">
         <h1>Hi, I'm Greta Allwyn</h1>
         <p>React Native Developer | Full Stack</p>
@@ -37,8 +39,8 @@
     <div class="container">
       <h2>About Me</h2>
       <p>
-        I'm a passionate React Native Developer with a proven track record of revitalizing and delivering high-quality mobile applications. 
-        Skilled in end-to-end development, including design, coding, and deployment. I love solving complex challenges and creating impactful solutions.
+        I'm a React Native Developer with a track record of revitalizing and delivering production-ready mobile applications.
+        Skilled in end-to-end development (design, coding, testing, deployment) and in solving complex integration challenges.
       </p>
     </div>
   </section>
@@ -49,11 +51,101 @@
       <h2>Skills</h2>
       <div class="skills-list">
         <div class="skill-card">React Native</div>
-        <div class="skill-card">Ruby on Rails</div>
-        <div class="skill-card">GraphQL</div>
+        <div class="skill-card">Expo</div>
         <div class="skill-card">JavaScript</div>
+        <div class="skill-card">GraphQL</div>
+        <div class="skill-card">Apollo Client</div>
+        <div class="skill-card">Ruby on Rails</div>
+        <div class="skill-card">PostgreSQL</div>
         <div class="skill-card">API Integration</div>
-        <div class="skill-card">Deployment & CI/CD</div>
+        <div class="skill-card">CI/CD</div>
+        <div class="skill-card">Testing</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights / Strengths Section -->
+  <section id="highlights" class="section">
+    <div class="container">
+      <h2>What I’m Known For</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Modernising legacy codebases</h3>
+          <p>
+            I’m strong at taking legacy mobile code and shaping it into something stable and production-ready —
+            upgrading outdated dependencies, removing brittle patterns, and improving reliability without breaking users.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>Turning ambiguity into a shippable product</h3>
+          <p>
+            I can take unclear requirements, ask the right questions, define scope, and deliver iteratively —
+            with practical trade-offs, clear communication, and working software.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>High autonomy</h3>
+          <p>
+            Comfortable owning features end-to-end: architecture decisions, implementation, testing, deployment,
+            monitoring, and support.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>Quick learner across stacks</h3>
+          <p>
+            Fast to adapt to new technologies and deliver production-quality results.
+            Experienced across multiple languages and frameworks (.NET, Java, Node.js) and self-learnt MERN.
+            Comfortable with SQL and NoSQL databases.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Evidence Section -->
+  <section id="evidence" class="section bg-light">
+    <div class="container">
+      <h2>Production Engineering Evidence</h2>
+      <ul class="evidence-list">
+        <li><strong>GraphQL / Apollo Client:</strong> queries &amp; mutations, auth headers, error handling, cache awareness</li>
+        <li><strong>Mobile features:</strong> push notifications, location permissions, camera/image picker, WebView redirect flows</li>
+        <li><strong>Payments:</strong> Stripe RN integration + backend Stripe webhooks; safe retries / idempotency awareness</li>
+        <li><strong>Rails:</strong> graphql-ruby schema/mutations, JWT/session auth patterns, background jobs (Delayed Job), monitoring (Rollbar)</li>
+        <li><strong>Legacy integrations:</strong> SOAP/XML parsing via Axios; secure uploads via signed Cloudinary flows</li>
+        <li><strong>Testing:</strong> Jest (React Native) and RSpec (Rails); regression-focused coverage for critical user journeys</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Demo Videos Section -->
+  <section id="demos" class="section">
+    <div class="container">
+      <h2>Demo Videos</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Enterprise App – MaintiMizer</h3>
+          <p>Short walkthrough showing key flows and UI.</p>
+          <a
+            href="https://drive.google.com/file/d/1CaeKFToubOFRhU2d_aoAWwJymLYe-u0Q/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+          >
+            Watch demo video
+          </a>
+        </div>
+        <div class="project-card">
+          <h3>Lounge Sharing Travel App</h3>
+          <p>Short walkthrough showing core features and user journey.</p>
+          <a
+            href="https://drive.google.com/file/d/1ybCnr42pHU380ePc9OAmrwkf3A9UvKsN/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+          >
+            Watch demo video
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -65,13 +157,21 @@
       <div class="projects-grid">
         <div class="project-card">
           <h3>Lounge Sharing Travel App</h3>
-          <p>A mobile app built with React Native and Ruby on Rails, allowing users to share and request access to lounge passes.</p>
-          <a href="https://github.com/gretaallwyn/lounge-sharing-app" target="_blank" class="project-link">View Project</a>
+          <p>
+            A mobile app built with React Native and Ruby on Rails, allowing users to share and request access to lounge passes.
+          </p>
+          <a href="https://github.com/gretaallwyn/lounge-sharing-app" target="_blank" rel="noopener noreferrer" class="project-link">
+            View Project
+          </a>
         </div>
         <div class="project-card">
           <h3>Enterprise Work Request App</h3>
-          <p>Revitalized and improved a mobile app for maintenance requests in manufacturing companies using React Native and SOAP APIs.</p>
-          <a href="https://github.com/gretaallwyn/work-request-app" target="_blank" class="project-link">View Project</a>
+          <p>
+            Revitalised and improved a mobile app for maintenance requests in manufacturing companies using React Native and SOAP APIs.
+          </p>
+          <a href="https://github.com/gretaallwyn/work-request-app" target="_blank" rel="noopener noreferrer" class="project-link">
+            View Project
+          </a>
         </div>
       </div>
     </div>
@@ -83,7 +183,7 @@
       <h2>Contact Me</h2>
       <p>If you're interested in working together, feel free to reach out to me through email or LinkedIn.</p>
       <p><a href="mailto:gretaphilip29@gmail.com">gretaphilip29@gmail.com</a></p>
-      <p><a href="https://www.linkedin.com/in/greta-allwyn-384b2221b" target="_blank">LinkedIn</a></p>
+      <p><a href="https://www.linkedin.com/in/greta-allwyn-384b2221b" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
     </div>
   </section>
 

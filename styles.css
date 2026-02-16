@@ -39,6 +39,7 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap; /* ✅ allow wrapping on small screens */
 }
 
 nav ul li {

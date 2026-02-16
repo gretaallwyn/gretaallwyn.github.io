@@ -34,16 +34,44 @@ nav .logo {
   color: white;
 }
 
+/* ✅ Updated only nav rules to wrap properly on mobile (keeps original look on desktop) */
 nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;                 /* added */
   display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap; /* ✅ allow wrapping on small screens */
+  justify-content: flex-end;  /* original */
+  flex-wrap: wrap;            /* added */
+  gap: 10px 14px;             /* added */
 }
 
 nav ul li {
-  margin-left: 20px;
+  margin-left: 20px;          /* original */
+}
+
+/* When wrapping, left-margin creates weird spacing on new lines — remove on small screens only */
+@media (max-width: 600px) {
+  nav ul {
+    justify-content: center;   /* nicer on mobile */
+  }
+
+  nav ul li {
+    margin-left: 0;            /* remove the desktop spacing on wrapped rows */
+  }
+
+  nav ul li a {
+    display: inline-block;     /* added */
+    padding: 8px 10px;         /* added */
+    white-space: nowrap;       /* added */
+  }
+}
+
+/* Optional: slightly smaller tap targets/text on very small screens */
+@media (max-width: 480px) {
+  nav ul li a {
+    padding: 6px 8px;
+    font-size: 14px;
+  }
 }
 
 nav ul li a {

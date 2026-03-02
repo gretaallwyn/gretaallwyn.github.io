@@ -268,8 +268,10 @@ html,body{height:100%}
     @media (max-width: 920px){
       .hero{grid-template-columns:1fr;}
       .grid3{grid-template-columns:1fr}
-      .photoFrame{aspect-ratio: 16 / 10;} /* wider on mobile */
+       .photoFrame{aspect-ratio: 3 / 4;}
+      .photoFrame img{object-position: 50% 18%;}
     }
+ 
     @media (max-width: 720px){
       nav ul{gap:8px}
       .title{font-size:1.85rem}
@@ -287,4 +289,5 @@ html,body{height:100%}
       .muted{color:#333}
       .btn{display:none}
     }
+
 

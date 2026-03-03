@@ -268,7 +268,7 @@ html,body{height:100%}
     @media (max-width: 920px){
       .hero{grid-template-columns:1fr;}
       .grid3{grid-template-columns:1fr}
-       .photoFrame{aspect-ratio: 3 / 4;}
+      .photoFrame{aspect-ratio: 1 / 1;}
       .photoFrame img{object-position: 50% 18%;}
     }
  
@@ -289,6 +289,7 @@ html,body{height:100%}
       .muted{color:#333}
       .btn{display:none}
     }
+
 
 
 

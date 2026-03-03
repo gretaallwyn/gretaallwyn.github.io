@@ -93,7 +93,7 @@ html,body{height:100%}
     /* HERO */
     .hero{
       display:grid;
-      grid-template-columns: 1.25fr .75fr;
+      grid-template-columns: 1.55fr .45fr;
       gap:24px;
       align-items:stretch;
       padding:26px 0 10px;
@@ -154,7 +154,7 @@ html,body{height:100%}
       border:1px solid var(--line);
       background: rgba(255,255,255,.03);
       border-radius: var(--radius);
-      padding:18px;
+      padding:12px;
       height:100%;
       display:flex;
       flex-direction:column;
@@ -169,7 +169,7 @@ html,body{height:100%}
         radial-gradient(700px 240px at 70% 10%, rgba(77,227,193,.14), transparent 55%),
         rgba(255,255,255,.02);
       box-shadow: 0 10px 30px rgba(0,0,0,.35);
-      aspect-ratio: 4 / 5; /* nice portrait block */
+      aspect-ratio: 1 / 1; /* nice portrait block */
       position:relative;
     }
     .photoFrame img{
@@ -289,5 +289,6 @@ html,body{height:100%}
       .muted{color:#333}
       .btn{display:none}
     }
+
 
 

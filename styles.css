@@ -143,6 +143,18 @@ html,body{height:100%}
     }
     .demoLink:hover{background:rgba(124,156,255,.18); color:var(--text)}
 
+    .projectLinks{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      justify-content:flex-end;
+    }
+    .demoLink.secondary{
+      border-color:rgba(77,227,193,.32);
+      background:rgba(77,227,193,.10);
+    }
+    .demoLink.secondary:hover{background:rgba(77,227,193,.16); color:var(--text)}
+
     .btn{
       display:inline-flex; align-items:center; justify-content:center;
       gap:10px;
@@ -306,6 +318,9 @@ html,body{height:100%}
       .subtitle{font-size:1rem}
       .grid2{grid-template-columns:1fr}
       .ctaRow .btn{width:100%;}
+
+      .projectLinks{width:100%; justify-content:flex-start}
+      .projectLinks .demoLink{flex:1; min-width:135px}
       .photoCard{max-width:240px}
       .photoFrame{max-width:210px; padding:8px}
     }

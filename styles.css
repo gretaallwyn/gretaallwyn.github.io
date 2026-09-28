@@ -340,3 +340,83 @@ html,body{height:100%}
 
 
 
+
+/* Portfolio content refinements */
+.eyebrow{
+  display:block;
+  margin-bottom:5px;
+  color:var(--accent2);
+  font-size:.78rem;
+  font-weight:750;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+}
+.sectionIntro{
+  max-width:620px;
+  margin:0;
+  color:var(--muted);
+  font-size:.94rem;
+}
+.noteCard{
+  margin-top:14px;
+  padding:16px;
+  border:1px solid rgba(77,227,193,.20);
+  border-radius:16px;
+  background:rgba(77,227,193,.045);
+}
+.noteCard p{margin:7px 0 0}
+.projectType{
+  display:block;
+  margin-bottom:6px;
+  color:var(--accent2);
+  font-size:.78rem;
+  font-weight:700;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+}
+.projectSummary{
+  color:var(--text);
+  font-size:1rem;
+  margin:2px 0 4px;
+}
+.projectCard h4{
+  margin:5px 0 0;
+  font-size:.92rem;
+  color:var(--text);
+}
+.evidenceBox{
+  margin-top:4px;
+  padding:12px 14px;
+  border-left:3px solid rgba(124,156,255,.7);
+  border-radius:8px;
+  background:rgba(124,156,255,.07);
+  color:var(--muted);
+}
+.evidenceBox strong{color:var(--text)}
+@media (max-width:720px){
+  .sectionIntro{max-width:none}
+}
+
+/* v2.1 compact professional project layout */
+.professionalGrid{
+  align-items:stretch;
+}
+.professionalGrid .projectCard{
+  height:100%;
+}
+.compactList li{
+  margin:6px 0;
+}
+.projectCard code{
+  font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size:.9em;
+  color:var(--text);
+  background:rgba(255,255,255,.045);
+  padding:1px 5px;
+  border-radius:6px;
+}
+@media (min-width:721px){
+  .professionalGrid .projectTop{
+    min-height:118px;
+  }
+}
